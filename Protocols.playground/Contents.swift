@@ -61,4 +61,29 @@ for prettyThing in prettyThings {
     
 }
 
+class Car: PrettyDescription{
+    
+    var name: String
+    var height: Double
+    var favouritFood: String
+    
+    init( name: String, height: Double, favouritFood: String){
+        
+        self.name = name
+        self.height = height
+        self.favouritFood = favouritFood
+        
+    }
+    
+
+    
+    var description: String {
+        
+        return "name: \(name), height: \(height), favFood: \(favouritFood)"
+    }
+}
+
+
+
+
 
